@@ -2,8 +2,6 @@ body{
     margin: 0;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
-    background-image: url(../img/IMG_1265.PNG);
-    background-size: contain;
 }
 
 /*header*/
@@ -38,7 +36,6 @@ header li{
     list-style: none;
     font-weight: 900;
     font-size: 1.5em;
-    text-shadow: 0px 0px 2px black ;
     display: flex;
     align-items: center;
     text-transform: capitalize;
@@ -49,4 +46,22 @@ header li:hover{
     border-bottom: 5px solid darkblue;
 }
 
-/*article*/
+/*article Politica*/
+
+.politica{
+    width: 60%;
+    padding: 10px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(142, 158, 245, 0.18);
+}
+
+.politica p{
+    text-align: justify;
+    font-style: italic;
+}
+
+/*article productos*/
+
