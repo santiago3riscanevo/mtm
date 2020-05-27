@@ -89,7 +89,7 @@ header li:hover{
     box-shadow: 9px 9px 20px black;
 }
 
-.pretina, .marquilla, .etiqueta{
+.pretina, .cinta, .etiqueta, .marquilla, .etiqueta2{
     position: relative;
     height: 330px;
 }
