@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0px;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -64,4 +65,36 @@ header li:hover{
 }
 
 /*article productos*/
+
+#productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#productos p{
+    border-radius: 10px;
+    background-color:rgba(142, 158, 245, 0.68) ;
+    width:350px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    top:50%;
+    left: 5%;
+    right: 5%;
+}
+
+#productos img{
+    border-radius: 20px;
+}
+
+.pretina, .marquilla, .etiqueta{
+    position: relative;
+    height: 330px;
+}
+
+
+
+
+
 
