@@ -86,6 +86,7 @@ header li:hover{
 
 #productos img{
     border-radius: 20px;
+    box-shadow: 9px 9px 20px black;
 }
 
 .pretina, .marquilla, .etiqueta{
