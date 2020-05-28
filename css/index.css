@@ -44,6 +44,7 @@ header li{
 
 header li:hover{
     cursor: pointer;
+    transition: ease 0.2s;
     border-bottom: 5px solid darkblue;
 }
 
@@ -56,6 +57,7 @@ header li:hover{
     margin-bottom: 3em;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
     background-color:rgba(142, 158, 245, 0.18);
 }
 
@@ -71,13 +73,15 @@ header li:hover{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 #productos p{
     border-radius: 10px;
-    background-color:rgba(142, 158, 245, 0.68) ;
+    background-color:rgba(142, 158, 245, 0.811);
     width:350px;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding: 9px;
     position: absolute;
     top:50%;
     left: 5%;
@@ -85,13 +89,19 @@ header li:hover{
 }
 
 #productos img{
-    border-radius: 20px;
     box-shadow: 9px 9px 20px black;
+    transition: ease 0.3s;
+    border-radius: 50%;
+}
+
+#productos img:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
 }
 
 .pretina, .cinta, .etiqueta, .marquilla, .etiqueta2{
     position: relative;
-    height: 330px;
+    height: 370px;
 }
 
 
