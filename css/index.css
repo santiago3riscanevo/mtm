@@ -72,6 +72,7 @@ header li:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 5%;
 }
 
 #productos p{
@@ -103,6 +104,40 @@ header li:hover{
     position: relative;
     height: 370px;
 }
+
+/* caracteristicas*/
+#caracteristicas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:rgba(142, 158, 245, 0.18);
+}
+
+.calidad, .tiempo{
+    margin: 0% 5%;
+}
+
+.Hcalidad, .Htiempo{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: none;
+    font-size: 5em;
+}
+
+#caracteristicas p{
+    padding: 20px;
+    text-align: center;
+}
+
+#caracteristicas p::first-line{
+    font-size: 2em;
+    margin-bottom: 3px;
+}
+
+
+
+
 
 
 
