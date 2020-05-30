@@ -91,7 +91,7 @@ header li:hover{
 
 #productos img{
     box-shadow: 9px 9px 20px black;
-    transition: ease 0.3s;
+    transition: ease 0.8s;
     border-radius: 50%;
 }
 
