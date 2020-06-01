@@ -5,6 +5,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+hr{
+    width: 30%;
+    height: 2px;
+    background-color: cornflowerblue;
+    border: none;
+}
+
 /*header*/
 
 header{
@@ -132,6 +139,58 @@ header li:hover{
 
 #caracteristicas p::first-line{
     font-size: 2em;
+}
+
+/* more products */
+#more_products .MP_header {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    border: none;
+    text-transform: capitalize;
+}
+
+#more_products .MP_header p{
+    margin-bottom: 5px;
+}
+
+#more_products .MP_pretina, #more_products .MP_marquilla, #more_products .MP_etiqueta{
+    width: 100%;
+    display: flex;
+    margin: 5% 1px;
+}
+
+#more_products img{
+    border-radius: 5px;
+}
+
+.MP_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 20px;
+    width: 60%;
+}
+
+.MP_pretina aside, .MP_marquilla aside, .MP_etiqueta aside{
+    width: 40%;
+    margin: 5px 20px;
+    }
+    
+.MP_pretina aside div, .MP_marquilla aside div, .MP_etiqueta aside div{
+    margin-top: 10px;
+}
+
+.MP_pretina aside img, .MP_marquilla aside img, .MP_etiqueta aside img{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.MP_pretina aside p, .MP_marquilla aside p, .MP_etiqueta aside p{
+    text-align: center;
 }
 
 
