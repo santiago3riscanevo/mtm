@@ -193,10 +193,60 @@ header li:hover{
     text-align: center;
 }
 
+/* formulario */
+#form{
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/telas.PNG);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+#form div{
+    width: 50%;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
 
+#form div::first-line{
+    font-size: 3em;
+}
 
+#form div p:nth-last-of-type(1){
+    font-size: 0.5em;
+}
 
+#contact{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(142, 158, 245, 0.5);
+    border-radius: 5px; 
+}
+
+#contact input{
+    margin: 10px auto;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+#contact button{
+    margin: 10px auto;
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
 
 
 
