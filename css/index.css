@@ -13,6 +13,14 @@ hr{
     border: none;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
 /*header*/
 
 header{
@@ -275,6 +283,7 @@ footer{
 .Fcontact{
     width: 33.3%;
     text-align: center;
+    
 }
 
 .Fapps{
