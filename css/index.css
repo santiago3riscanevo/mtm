@@ -3,7 +3,7 @@ body{
     padding: 0px;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: ##dedede;
+    background-color: #fefefe;
 }
 
 hr{
@@ -15,6 +15,7 @@ hr{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 a:visited{
@@ -249,7 +250,7 @@ header li:hover{
     font-size: 1em;
 }
 
-#contact button{
+#contact input:nth-last-of-type(1){
     margin: 10px auto;
     width: 40%;
     height: 30px;
@@ -299,12 +300,16 @@ footer{
     font-size: 4em;
 }
 
-.Fapps i, #contact button:hover{
+.Fapps i:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
 
-
+#contact input:nth-last-of-type(1):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
 
 
 
