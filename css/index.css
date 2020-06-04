@@ -23,7 +23,6 @@ a:visited{
 }
 
 /*header*/
-
 header{
     display: flex;
     padding: 1em 1em 0em 1em;
@@ -42,7 +41,7 @@ header .nav{
     height: auto; 
 }
 
-header ul{
+.nav ul{
     height: 104px;
     padding: 0px;
     margin: 0px;
@@ -50,7 +49,7 @@ header ul{
     justify-content: space-around;
 }
 
-header li{
+.nav li{
     list-style: none;
     font-weight: 900;
     font-size: 1.5em;
@@ -59,14 +58,42 @@ header li{
     text-transform: capitalize;
 }
 
-header li:hover{
+.nav li:nth-last-of-type(1){
+    display: none;
+}
+
+
+.nav li:hover{
     cursor: pointer;
     transition: ease 0.2s;
     border-bottom: 5px solid darkblue;
 }
 
-/*article Politica*/
+/* media nav */
+#media{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
 
+#media ul{
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+#media ul li{
+    background-color:rgba(70, 79, 135, 0.18);;
+    color: ivory;
+    list-style: none;
+    padding: 9px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/*article Politica*/
 .politica{
     width: 60%;
     padding: 10px;
@@ -84,7 +111,6 @@ header li:hover{
 }
 
 /*article productos*/
-
 #productos{
     display: flex;
     flex-wrap: wrap;
@@ -185,7 +211,7 @@ header li:hover{
 .MP_pretina aside, .MP_marquilla aside, .MP_etiqueta aside{
     width: 40%;
     margin: 5px 20px;
-    }
+}
     
 .MP_pretina aside div, .MP_marquilla aside div, .MP_etiqueta aside div{
     margin-top: 10px;
@@ -264,6 +290,7 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     background-color: #fefefe;
@@ -284,7 +311,6 @@ footer{
 .Fcontact{
     width: 33.3%;
     text-align: center;
-    
 }
 
 .Fapps{
@@ -311,6 +337,187 @@ footer{
     text-decoration: underline;
 }
 
+/* responsive design */
+@media(max-width:1100px){
+    
+    #more_products .MP_pretina, #more_products .MP_etiqueta{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 5% 1px;
+    }
 
+    #more_products .MP_marquilla{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 5% 1px;
+    }
 
+    .MP_pretina .MP_img, .MP_etiqueta .MP_img, .MP_marquilla .MP_img{
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px;
+    }
 
+    .MP_pretina .MP_img img, .MP_etiqueta .MP_img img, .MP_marquilla .MP_img img{
+        width: 70%;
+    }
+
+    .MP_pretina aside, .MP_etiqueta aside, .MP_marquilla aside{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .MP_pretina aside div, .MP_etiqueta aside div, .MP_marquilla aside div{
+        width: 50%;
+    }
+
+    .MP_pretina aside p, .MP_etiqueta aside p, .MP_marquilla aside p{
+        width: 60%;
+        margin: 5px 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .MP_pretina aside img, .MP_etiqueta aside img, .MP_marquilla aside img{
+        width: 60%;
+        height: 50%;
+    }
+} 
+
+@media(max-width:807px){
+
+    .MP_pretina aside img, .MP_etiqueta aside img, .MP_marquilla aside img{
+        width: 70%;
+        height: 40%;
+    }
+
+   #form{
+        height: auto;
+    }
+
+    #form div{
+        width: 100%;
+    }
+
+    #contact{
+        width: 80%;
+    }
+    
+    #contact input{
+        background-color:rgba(142, 158, 245, 0);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+    }
+
+    #contact input:nth-last-of-type(1){
+        border: solid 1px;
+        border-radius: 5px;
+        background-color: w;
+    }
+}
+
+@media only screen and (max-width:513px){
+
+    header .logo{
+        width: 100%;
+    }
+
+    .nav{
+        width: 30%;
+    }
+
+    .nav ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav li{
+        display: none;
+    }
+
+    .nav li:nth-last-of-type(1){
+        display: initial;
+    }
+
+    header .logo{
+        width: 100%;
+    }
+
+    .nav{
+        width: 30%;
+    }
+
+    .nav ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav li{
+        display: none;
+    }
+
+    .nav li:nth-last-of-type(1){
+        display: initial;
+    }
+
+    .MP_pretina aside img, .MP_etiqueta aside img, .MP_marquilla aside img{
+        width: 70%;
+        height: 30%;
+    }
+
+    #productos img{
+        width: 300px;
+    }
+
+    #productos img:hover{
+        transform: scale(1.01);
+        border-radius: 20px;
+    }
+
+    #productos p{
+        width:280px;
+        top:45%;
+        left: 1%;
+    }
+
+    #more_products .MP_header {
+        font-size: 1.8em;
+    }
+
+    #form{
+        height: auto;
+        font-size: 1em;     
+    }
+    
+     #form div::first-line{
+        font-size: 1.8em;
+    }
+        
+    #form div p:nth-last-of-type(1){
+        font-size: 0.3em;
+     }
+
+    footer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: #fefefe;
+    }
+
+    footer .Flogo, .Fcontact, .Fapps{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}

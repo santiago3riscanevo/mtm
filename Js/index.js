@@ -51,3 +51,20 @@ marquilla.addEventListener("mouseout",function(){
     marquillaDescription.style.color = "black";
     marquillaDescription.style.background = "rgba(142, 158, 245, 0.811)"
 })
+
+
+// responsive menu
+
+const menu = document.getElementById("menu");
+console.log(menu);
+
+const media = document.getElementById("media")
+console.log(media);
+
+menu.addEventListener("click",function(){
+    if(media.style.display === "none"){
+        media.style.display = "flex";
+    }else{
+        media.style.display = "none";
+    }
+})
