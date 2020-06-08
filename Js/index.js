@@ -13,7 +13,7 @@ pretina.addEventListener("mouseenter",function(){
 pretina.addEventListener("mouseout",function(){
     pretinaDescription.style.transition = "1.5s"
     pretinaDescription.style.color = "black";
-    pretinaDescription.style.background = "rgba(142, 158, 245, 0.811)"
+    pretinaDescription.style.background = "#dededecf"
 })
 
 const etiqueta2 = document.querySelector(".etiqueta2>img");
@@ -31,7 +31,7 @@ etiqueta2.addEventListener("mouseenter",function(){
 etiqueta2.addEventListener("mouseout",function(){
     etiqueta2Description.style.transition = "1.5s"
     etiqueta2Description.style.color = "black";
-    etiqueta2Description.style.background = "rgba(142, 158, 245, 0.811)"
+    etiqueta2Description.style.background = "#dededecf"
 })
 
 const marquilla = document.querySelector(".marquilla>img");
@@ -49,7 +49,7 @@ marquilla.addEventListener("mouseenter",function(){
 marquilla.addEventListener("mouseout",function(){
     marquillaDescription.style.transition = "1.5s"
     marquillaDescription.style.color = "black";
-    marquillaDescription.style.background = "rgba(142, 158, 245, 0.811)"
+    marquillaDescription.style.background = "#dededecf"
 })
 
 

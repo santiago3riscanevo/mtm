@@ -23,20 +23,25 @@ a:visited{
 }
 
 /*header*/
-header{
+#header{
+    background-color: #fefefe;
     display: flex;
     padding: 1em 1em 0em 1em;
     border-bottom: darkblue  5px solid ;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    z-index: 3
 }
 
-header .logo{
+#header .logo{
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header .nav{
+#header .nav{
     width: 70%;
     height: auto; 
 }
@@ -84,7 +89,7 @@ header .nav{
 }
 
 #media ul li{
-    background-color:rgba(70, 79, 135, 0.18);;
+    background-color:rgba(70, 79, 135, 0.18);
     color: ivory;
     list-style: none;
     padding: 9px;
@@ -94,6 +99,10 @@ header .nav{
 
 
 /*article Politica*/
+#article{
+    padding-top: 8em;
+}
+
 .politica{
     width: 60%;
     padding: 10px;
@@ -102,7 +111,7 @@ header .nav{
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
-    background-color:rgba(142, 158, 245, 0.18);
+    background-color:#dedede;
 }
 
 .politica p{
@@ -120,7 +129,7 @@ header .nav{
 
 #productos p{
     border-radius: 10px;
-    background-color:rgba(142, 158, 245, 0.811);
+    background-color:#dededee5;
     width:350px;
     text-align: center;
     margin-top: 0px;
@@ -153,7 +162,7 @@ header .nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color:rgba(70, 79, 135, 0.18);
+    background-color:#dedede;
 }
 
 .calidad, .tiempo{
@@ -228,6 +237,8 @@ header .nav{
 .MP_pretina aside p, .MP_marquilla aside p, .MP_etiqueta aside p{
     text-align: center;
 }
+
+
 
 /* formulario */
 #form{
@@ -339,6 +350,14 @@ footer{
 
 /* responsive design */
 @media(max-width:1100px){
+
+    #header{
+        position: static;
+    }
+
+    #article{
+        padding-top: 0;
+    }
     
     #more_products .MP_pretina, #more_products .MP_etiqueta{
         width: 100%;
@@ -391,6 +410,14 @@ footer{
 
 @media(max-width:807px){
 
+    #header{
+        position: static;
+    }
+
+    #article{
+        padding-top: 0;
+    }
+
     .MP_pretina aside img, .MP_etiqueta aside img, .MP_marquilla aside img{
         width: 70%;
         height: 40%;
@@ -425,8 +452,16 @@ footer{
 
 @media only screen and (max-width:513px){
 
-    header .logo{
+    #header{
+        position: static;
+    }
+
+    #header .logo{
         width: 100%;
+    }
+
+    #header .logo img{
+        width: 50%;
     }
 
     .nav{
@@ -469,6 +504,10 @@ footer{
 
     .nav li:nth-last-of-type(1){
         display: initial;
+    }
+
+    #article{
+        padding-top: 0;
     }
 
     .MP_pretina aside img, .MP_etiqueta aside img, .MP_marquilla aside img{
