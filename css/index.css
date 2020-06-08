@@ -238,8 +238,6 @@ a:visited{
     text-align: center;
 }
 
-
-
 /* formulario */
 #form{
     height: 80vh;
@@ -294,6 +292,29 @@ a:visited{
     border-radius: 5px;
     border: none;
     font-size: 1em;
+}
+
+/* enviado */
+.enviado{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.enviado p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.enviado a{
+    font-size: 1em;
+    text-align: center;
+}
+
+.enviado a:hover{
+    transform: scale(1.2);
+    color: royalblue;
 }
 
 /* footer */
@@ -448,6 +469,22 @@ footer{
         border-radius: 5px;
         background-color: w;
     }
+
+    .enviado{
+        width: 100%;
+    }
+
+    .enviado p{
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 2px;
+    }
+    
+    .enviado a{
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width:513px){
@@ -545,7 +582,23 @@ footer{
         
     #form div p:nth-last-of-type(1){
         font-size: 0.3em;
-     }
+    }
+
+    .enviado{
+        width: 100%;
+    }
+    .enviado p{
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 1px;
+    }
+    
+    .enviado a{
+        font-size: 0.5em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
 
     footer{
         width: 100%;
